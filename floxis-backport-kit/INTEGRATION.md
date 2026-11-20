@@ -24,8 +24,11 @@ Each version below was verified end-to-end: kit installed into a pristine checko
 | 10.29.1 | ✅ | ✅ 98 passed, 0 failed | ✅ all supported by core |
 
 Versions between these tags are expected to work as well; you can confirm yours in minutes by
-running the adapter test suite (step 4) after installing the kit. Prebid.js 11+ does **not** need
-this kit — the Floxis adapter ships natively in current Prebid.js (`--modules=floxisBidAdapter`).
+running the adapter test suite (step 4) after installing the kit. Prebid.js 11.15.0+ does **not**
+need this kit — the Floxis adapter ships natively there, with every region and user sync
+(`--modules=floxisBidAdapter`). Prebid.js 10.26.0 to 11.14 ship an earlier built-in adapter that
+bids only to US East and runs no user sync: upgrade to 11.15.0+, or, on 10.29.1 or older, install
+this kit.
 
 ## 1. Required files & setup
 
